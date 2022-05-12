@@ -1,23 +1,14 @@
 .about {
-    display: flex;
-    flex-wrap: wrap;
 
-    &__item {
-        width: calc((100% - 90px) / 4);
-        margin-right: 30px;
-    }
+    list-style: none;
 
-    &__item:last-child {
-        margin-right: 0;
-    }
-    
     &__box {
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 120px;
         margin-bottom: 30px;
-    
+
         background-color: $section-team-background;
     }
 
@@ -28,6 +19,7 @@
         text-transform: uppercase;
         color: $title-text-color;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     &__text {
@@ -35,5 +27,8 @@
         font-size: 14px;
         line-height: 1.7;
         color: $text-color;
+        
+
+        margin-bottom: 30px;
     }
 }

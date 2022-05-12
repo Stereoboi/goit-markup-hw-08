@@ -19,31 +19,60 @@
         <div class="container wrap">
             <nav class="wrap">
                 <a href="./index.html" class="logo"><span class="logo--color">Web</span>Studio</a>
-                <ul class="header-nav list">
-                    <li class="header-nav__item"><a href="./index.html"
-                            class="header-nav__link ">Студия</a></li>
-                    <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link header-nav__link--current ">Портфолио</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
-                </ul>
+    
+                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./img/sprite.svg#icon-close-menu"></use>
+                        <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+    
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="header-nav list">
+                        <li class="header-nav__item"><a href="./index.html"
+                                class="header-nav__link">Студия</a>
+                        </li>
+                        <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link header-nav__link--current ">Портфолио</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <ul class="contacts list">
+                            <li class="contacts__item">
+                                <a href="mailto:info@devstudio.com" class="contacts__link">
+                                    <svg class="contacts__icon" width="16" height="12">
+                                        <use href="./img/sprite.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="tel:+380961111111" class="contacts__link contacts__link--mobile">
+                                    <svg class="contacts__icon" width="10" height="16">
+                                        <use href="./img/sprite.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="media list">
+                            <li class="media__item">
+                                <a href="#" class="media__link ">Instagram</a>
+                            </li>
+                            <li class="media__item">
+                                <a href="#" class="media__link">Twitter</a>
+                            </li>
+                            <li class="media__item">
+                                <a href="#" class="media__link">Facebook</a>
+                            </li>
+                            <li class="media__item">
+                                <a href="#" class="media__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
             </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./img/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./img/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
         </div>
     </header>
     <!-- main portfolio -->
@@ -63,7 +92,7 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card1.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card1.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -80,7 +109,7 @@
                     <li class="cards__item">
                         <a href="" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card2.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card2.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -98,7 +127,7 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card3.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card3.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -117,7 +146,7 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card4.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card4.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -136,7 +165,7 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card5.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card5.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -155,7 +184,7 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card6.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card6.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -174,7 +203,7 @@
                     <li class="cards__item" >
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card7.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card7.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -193,7 +222,7 @@
                     <li class="cards__item" >
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card8.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card8.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -212,7 +241,7 @@
                     <li class="cards__item" >
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card9.jpg" alt="Технокряк" width="370">
+                                <img src="./img/portfolio/card9.jpg" alt="Технокряк" width="450">
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -307,7 +336,7 @@
         </div>
     </footer>
 
-
+<script src="./js/mobile.js"></script>
 </body>
 
 </html>

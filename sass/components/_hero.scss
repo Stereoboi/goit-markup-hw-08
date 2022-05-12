@@ -1,7 +1,8 @@
 .hero {
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
+    max-width: 480px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
 
@@ -15,8 +16,8 @@
 
     &__tagline {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.4;
+        font-size: 26px;
+        line-height: 1.6;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -24,7 +25,7 @@
 
         margin: 0 auto;
         margin-bottom: 30px;
-        width: 696px;
+        width: 360px;
     }
 
     &__btn {
@@ -36,5 +37,3 @@
 
     }
 }
-
-
