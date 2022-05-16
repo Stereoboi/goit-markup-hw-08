@@ -1,7 +1,13 @@
 .logo--footer {
-    display: block;
+    @media screen and (max-width: 1199px){
+        display: flex;
+    }
+    margin: 0;
+    padding: 0;
+    
+    align-items: center;
     color: $primary-white-color;
-    text-align: center;
+    justify-content: center;
 }
 
 
@@ -10,8 +16,18 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    &__tablet{
+        @media screen and (min-width: 768px){
+            display: flex;
+            align-items: baseline;
+        }
+    }
+
     &__contacts {
         align-items: baseline;
+        @media screen and (min-width: 1200px){
+            display: flex;
+        }
     }
 
     &__title {
@@ -20,10 +36,38 @@
         line-height: 1.14;
         text-transform: uppercase;
         color: $primary-white-color;
-        text-align: center;
+        
 
         margin-bottom: 20px;
-        margin-top: 60px;
+        
+        @media screen and (max-width: 767px){
+            margin-top: 60px;
+        }
+
+        @media screen and (max-width: 1199px){
+            text-align: center;
+            &--sign {
+                    margin-top: 60px;
+                }
+        }
+        
+    }
+}
+
+.block-adress{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-left: 61px;
+    }
+    
+}
+
+.social-footer{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-left: 165px;
+    }
+    
+    @media screen and (min-width: 1200px){
+        margin-left: 70px;
     }
 }
 
@@ -34,6 +78,10 @@
 
 .input {
     display: block;
+
+@media screen and (min-width: 1200px){
+    display: flex;
+}
 
     &__footer {
         margin: 0;
@@ -46,8 +94,21 @@
         border: 1px solid $border-input;
         outline: none;
 
-        margin-bottom: 20px;
+        
+        
         transition: border-color $animation-time $cubic;
+
+        @media screen and (max-width: 1199px){
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        @media screen and (min-width: 1200px){
+            width: 358px;
+            margin-right: 12px;
+        }
     }
 
     &__footer:focus {
@@ -108,8 +169,11 @@
         color: $footer-link-color;
         text-decoration: none;
         display: block;
-        text-align: center;
         
+    
+    @media screen and (max-width: 1199px){
+        text-align: center;
+    }
 
         transition: color $animation-time $cubic;
     }

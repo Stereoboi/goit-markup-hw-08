@@ -31,7 +31,7 @@
                 <div class="menu-container" id="menu-container" data-menu>
                     <ul class="header-nav list">
                         <li class="header-nav__item"><a href="./index.html"
-                                class="header-nav__link">Студия</a>
+                                class="header-nav__link ">Студия</a>
                         </li>
                         <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link header-nav__link--current ">Портфолио</a></li>
                         <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
@@ -40,7 +40,7 @@
                         <ul class="contacts list">
                             <li class="contacts__item">
                                 <a href="mailto:info@devstudio.com" class="contacts__link">
-                                    <svg class="contacts__icon" width="16" height="12">
+                                    <svg class="contacts__icon contacts__icon--mail" width="16" height="12">
                                         <use href="./img/sprite.svg#icon-envelope"></use>
                                     </svg>
                                     info@devstudio.com
@@ -48,7 +48,7 @@
                             </li>
                             <li class="contacts__item">
                                 <a href="tel:+380961111111" class="contacts__link contacts__link--mobile">
-                                    <svg class="contacts__icon" width="10" height="16">
+                                    <svg class="contacts__icon contacts__icon--phone" width="10" height="16">
                                         <use href="./img/sprite.svg#icon-smartphone"></use>
                                     </svg>
                                     +38 096 111 11 11
@@ -92,7 +92,24 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card1.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card1-370.jpg   370w,
+                                                        ./img/portfolio/card1-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card1-354.jpg   354w,
+                                                        ./img/portfolio/card1-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card1-450.jpg   450w,
+                                                        ./img/portfolio/card1-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card1-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -100,7 +117,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="cards__info">
+                            <div class="cards__info cards__info--tablet">
                                 <h2 class="cards__title">Технокряк</h2>
                                 <p class="cards__text">Веб-сайт</p>
                             </div>   
@@ -109,7 +126,24 @@
                     <li class="cards__item">
                         <a href="" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card2.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card2-370.jpg   370w,
+                                                        ./img/portfolio/card2-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card2-354.jpg   354w,
+                                                        ./img/portfolio/card2-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card2-450.jpg   450w,
+                                                        ./img/portfolio/card2-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card2-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -127,7 +161,24 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card3.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card3-370.jpg   370w,
+                                                        ./img/portfolio/card3-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card3-354.jpg   354w,
+                                                        ./img/portfolio/card3-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card3-450.jpg   450w,
+                                                        ./img/portfolio/card3-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card3-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -146,7 +197,24 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card4.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card4-370.jpg   370w,
+                                                        ./img/portfolio/card4-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card4-354.jpg   354w,
+                                                        ./img/portfolio/card4-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card4-450.jpg   450w,
+                                                        ./img/portfolio/card4-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card4-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -165,7 +233,24 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card5.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card5-370.jpg   370w,
+                                                        ./img/portfolio/card5-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card5-354.jpg   354w,
+                                                        ./img/portfolio/card5-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card5-450.jpg   450w,
+                                                        ./img/portfolio/card5-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card5-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -184,7 +269,24 @@
                     <li class="cards__item">
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card6.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card6-370.jpg   370w,
+                                                        ./img/portfolio/card6-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card6-354.jpg   354w,
+                                                        ./img/portfolio/card6-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card6-450.jpg   450w,
+                                                        ./img/portfolio/card6-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card6-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -203,7 +305,24 @@
                     <li class="cards__item" >
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card7.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card7-370.jpg   370w,
+                                                        ./img/portfolio/card7-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card7-354.jpg   354w,
+                                                        ./img/portfolio/card7-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card7-450.jpg   450w,
+                                                        ./img/portfolio/card7-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card7-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -222,7 +341,24 @@
                     <li class="cards__item" >
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card8.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card8-370.jpg   370w,
+                                                        ./img/portfolio/card8-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card8-354.jpg   354w,
+                                                        ./img/portfolio/card8-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card8-450.jpg   450w,
+                                                        ./img/portfolio/card8-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card8-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -241,7 +377,24 @@
                     <li class="cards__item" >
                         <a href="#" class="cards__link">
                             <div class="thumb-cards">
-                                <img src="./img/portfolio/card9.jpg" alt="Технокряк" width="450">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/portfolio/card9-370.jpg   370w,
+                                                        ./img/portfolio/card9-740.jpg   740w,
+                                                        
+                                                      " media="(min-width: 1200px)" sizes="(min-width: 1200px) 33vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card9-354.jpg   354w,
+                                                        ./img/portfolio/card9-708.jpg   708w,
+                                                        
+                                                      " media="(min-width: 768px)" sizes="(min-width: 768px) 50vw" />
+                                    <source srcset="
+                                                        ./img/portfolio/card9-450.jpg   450w,
+                                                        ./img/portfolio/card9-900.jpg   900w,
+                                                        
+                                                      " media="(max-width: 767px)" sizes="100vw" />
+                                    <img src="./img/portfolio/card9-354.jpg" alt="Технокряк" class="portfolio__img" />
+                                </picture>
                                 <div class="overlay">
                                     <p class="overlay__text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
@@ -265,62 +418,65 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container footer__contacts">
-            <div>
-                <a href="./index.html" class="logo logo--footer"><span class="logo--color">Web</span>Studio</a>
-                <address>
-                    <ul class="address list">
-                        <li class="address__item">
-                            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <div class="footer__tablet">
+                <div class="block-adress">
+                    <a href="./index.html" class="logo logo--footer"><span class="logo--color">Web</span>Studio</a>
+                    <address>
+                        <ul class="address list">
+                            <li class="address__item">
+                                <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                            </li>
+                            <li class="address__item"><a href="mailto:info@devstudio.com"
+                                    class="address__link">info@devstudio.com</a>
+                            </li>
+                            <li class="address__item"><a href="tel:+380961111111" class="address__link">+38 096 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+    
+                <div class="social-footer">
+                    <p class="footer__title">присоединяйтесь</p>
+                    <ul class="social list">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" class="social__link--footer social__link--hover"
+                                target="_blank" rel="noopener noreferrer nofolow">
+                                <svg class="social" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item"><a href="mailto:info@devstudio.com"
-                                class="address__link">info@devstudio.com</a>
+                        <li class="social__item">
+                            <a href="https://twitter.com/" class="social__link--footer social__link--hover" target="_blank"
+                                rel="noopener noreferrer nofolow">
+                                <svg class="social" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item"><a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+                        <li class="social__item">
+                            <a href="https://www.facebook.com/" class="social__link--footer social__link--hover"
+                                target="_blank" rel="noopener noreferrer nofolow">
+                                <svg class="social" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/" class="social__link--footer social__link--hover"
+                                target="_blank" rel="noopener noreferrer nofolow">
+                                <svg class="social" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
     
-            <div class="social-footer">
-                <p class="footer__title">присоединяйтесь</p>
-                <ul class="social list">
-                    <li class="social__item">
-                        <a href="https://www.instagram.com/" class="social__link--footer social__link--hover"
-                            target="_blank" rel="noopener noreferrer nofolow">
-                            <svg class="social" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://twitter.com/" class="social__link--footer social__link--hover" target="_blank"
-                            rel="noopener noreferrer nofolow">
-                            <svg class="social" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://www.facebook.com/" class="social__link--footer social__link--hover" target="_blank"
-                            rel="noopener noreferrer nofolow">
-                            <svg class="social" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://www.linkedin.com/" class="social__link--footer social__link--hover" target="_blank"
-                            rel="noopener noreferrer nofolow">
-                            <svg class="social" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
     
             <div class="sign-up">
-                <p class="footer__title">Подпишитесь на рассылку</p>
+                <p class="footer__title footer__title--sign ">Подпишитесь на рассылку</p>
                 <form class="input">
                     <label for="mail"></label>
                     <input class="input__footer" type="email" name="mail" id="mail" placeholder="E-mail" />

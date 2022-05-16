@@ -14,30 +14,60 @@
     opacity: 1;
     transition: $animation-time $cubic;
 
+    @media screen and (min-width: 768px){
+        padding-top: 208px;
+        padding-bottom: 159px;
+        padding-right: 207px;
+        padding-left: 159px;
+    }
+
+     @media screen and (min-width: 768px){
+        padding-top: 221px;
+        padding-bottom: 536px;
+        padding-right: 222px;
+        padding-left: 536px;
+    }
+
     &.is-hidden {
         opacity: 0;
         pointer-events: none;
     }
 
     &.is-hidden .modal {
-        transform: translate(-50%, -50%) scale(0.8);
+        transform: scale(0.8);
+        @media screen and (min-width: 768px){
+            transform: translate(-50%, -50%) scale(0.8);
+        }
     }
 
 }
 
 .modal {
-
     transform: scale(1);
     padding: 40px;
     background-color: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
+    z-index: 100;
     transition: $animation-time $cubic;
     @media screen and (max-width: 767px) {
             max-width: 480px;
+            
         }
-    
+    @media screen and (min-width: 768px){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 450px;
+        min-height: 610px;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media screen and (min-width: 1200px){
+        min-width: 528px;
+        min-height: 581px;
+    }
 
     &__title {
         font-weight: 700;
@@ -195,6 +225,10 @@
         font-size: 12px;
         line-height: 1.16;
         margin-left: 8px;
+        @media screen and (min-width: 1200px){
+            font-size: 14px;
+            line-height: 1.7;
+        }
     }
 
     &__input:checked+&__icon {
@@ -210,6 +244,10 @@
         font-size: 12px;
         line-height: 1.16;
         color: $accent-color;
+        @media screen and (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 1.7;
+            }
     }
 
     &__link::after {
