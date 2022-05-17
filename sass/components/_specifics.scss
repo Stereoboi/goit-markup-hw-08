@@ -44,7 +44,10 @@
         text-transform: uppercase;
         color: $title-text-color;
         margin-bottom: 10px;
-        text-align: center;
+        @media screen and (max-width: 767px){
+            text-align: center;
+        }
+        
     }
 
     &__text {
@@ -53,7 +56,9 @@
         line-height: 1.7;
         color: $text-color;
         
-
-        margin-bottom: 30px;
+        @media screen and (max-width: 767px){
+            margin-bottom: 30px;
+        }
+        
     }
 }

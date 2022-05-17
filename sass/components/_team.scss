@@ -22,7 +22,7 @@
             margin: 15px;
         }
 
-        width: 450px;
+        max-width: 450px;
         background-color: $primary-white-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -45,7 +45,11 @@
             padding: 30px 32px 30px 32px;
         }
 
-        padding: 30px 122px 24px 122px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 32px;
+                padding-right: 32px;
+                text-align: center;
     }
 
     &__name {

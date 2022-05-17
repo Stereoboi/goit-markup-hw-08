@@ -93,7 +93,14 @@
         border-radius: 4px;
         border: 1px solid $border-input;
         outline: none;
-
+        transition: border-color $animation-time $cubic;
+        
+        @media screen and (max-width: 767px){
+            width: 100%;
+            margin-bottom: 20px;
+        }
+            
+       
         
         
         transition: border-color $animation-time $cubic;

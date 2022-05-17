@@ -117,7 +117,7 @@
         letter-spacing: 0.02em;
         font-size: 14px;
         font-style: normal;
-        line-height: 1.4;
+        line-height: 1.14;
         
         color: $title-text-color;
         text-decoration: none;
@@ -227,6 +227,12 @@
                 margin-left: 30px;
             }
         }
+
+        &--mail{
+            @media screen and (max-width: 767px){
+                font-size: 24px;
+            }
+        }
     }
 
     &__icon {
@@ -253,6 +259,7 @@
 
 .media {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     @media screen and (min-width: 768px){
         display: none;
