@@ -86,7 +86,7 @@
     &__footer {
         margin: 0;
         padding: 15px 16px;
-        width: 450px;
+        width: 100%;
         height: 50px;
         color: $footer-link-color;
         background-color: $background_color;
@@ -97,7 +97,10 @@
         
         
         transition: border-color $animation-time $cubic;
-
+        
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            width: 450px;
+        }
         @media screen and (max-width: 1199px){
             margin-bottom: 20px;
             margin-left: auto;
